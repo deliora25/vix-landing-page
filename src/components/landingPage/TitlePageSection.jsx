@@ -6,7 +6,7 @@ const TitlePageSection = forwardRef((props, ref) => {
   return (
     <div className="flex h-full w-full " ref={ref}>
       <div className="bg-gradient-to-b from-[#143365] to-gray-950 w-full">
-        <div className="flex flex-col items-center justify-center sm:mt-28 mt-6 w-full">
+        <div className="flex flex-col items-center justify-center sm:mt-20 mt-6 w-full">
           <div className="flex flex-col space-y-8 items-center">
             <img
               src="https://static.wixstatic.com/media/9965da_43a977ea80a347908904f481e0e93af6~mv2.png/v1/fill/w_600,h_224,al_c,lg_1,q_85,enc_auto/9965da_43a977ea80a347908904f481e0e93af6~mv2.png"

@@ -42,11 +42,13 @@ const Navbar = ({ onClick }) => {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
+                      //NOTE: change this to anchor tag
                       <div
                         key={item.name}
                         // href={item.href}
                         role="button"
                         className={classNames(
+                          //uncomment once anchor tag is implemented
                           // item.current
                           //   ? "bg-gray-400 text-white"
                           //   : "text-gray-300 hover:bg-gray-700 hover:text-white",
