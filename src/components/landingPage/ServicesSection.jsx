@@ -23,7 +23,8 @@ const ServicesSection = forwardRef((props, ref) => {
 
   const renderButton = () => {
     return (
-      <Button className="inline-flex items-center gap-2 rounded-md bg-gray-700 py-2 px-4 sm:text-lg text-md font-semibold text-white shadow-inner shadow-white/10 cursor-pointer hover:bg-gray-400 w-fit z-20">
+      //TODO: add onclick function
+      <Button className="items-center rounded-md border-gray-600 border bg-gray-950 py-4 px-8 sm:text-lg text-md font-semibold text-white  cursor-pointer hover:bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 w-fit z-20">
         Learn more
       </Button>
     );
