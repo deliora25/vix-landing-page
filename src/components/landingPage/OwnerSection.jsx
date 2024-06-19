@@ -6,7 +6,7 @@ const { storyMessage, header, title, name } = ownerSectionDetails || {};
 const OwnerSection = forwardRef((props, ref) => {
   return (
     <div
-      className="flex flex-col items-center justify-center sm:space-y-16 space-y-4 px-2 h-full w-full bg-gray-950"
+      className="flex flex-col items-center justify-center sm:space-y-16 space-y-4 lg:px-10 px-2 h-full w-full bg-gray-950 border-none"
       ref={ref}
     >
       <div className="pt-16 flex flex-col items-center justify-center space-y-4">

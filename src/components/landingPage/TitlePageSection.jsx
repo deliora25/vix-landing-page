@@ -4,7 +4,7 @@ import { forwardRef } from "react";
 
 const TitlePageSection = forwardRef((props, ref) => {
   return (
-    <div className="flex h-full w-full " ref={ref}>
+    <div className="flex h-full w-full border-none" ref={ref}>
       <div className="bg-gradient-to-b from-[#143365] to-gray-950 w-full">
         <div className="flex flex-col items-center justify-center sm:mt-20 mt-6 w-full">
           <div className="flex flex-col space-y-8 items-center">
@@ -27,7 +27,7 @@ const TitlePageSection = forwardRef((props, ref) => {
             </Button>
           </div>
 
-          <div className="w-full h-fit">
+          <div className="w-full h-fit border-none">
             <img
               src={wave_image}
               alt="wave-image"

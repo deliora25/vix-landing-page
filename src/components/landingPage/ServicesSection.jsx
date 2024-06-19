@@ -6,15 +6,17 @@ import { forwardRef } from "react";
 const ServicesSection = forwardRef((props, ref) => {
   const renderTitle = (title, subtitle, icon) => {
     return (
-      <div className="flex space-x-2 items-start justify-start">
-        <div className="flex space-x-4 items-center justify-center">
-          <div className="rounded-lg  p-4 bg-[#1A181B]">
-            <img src={icon} className="h-10 w-10" alt="icon-image" />
-          </div>
+      <div className="flex flex-col space-y-4">
+        <div className="flex space-x-2 items-start justify-start">
+          <div className="flex space-x-4 items-center justify-center">
+            <div className="rounded-lg p-4 bg-[#1A181B] shrink-0">
+              <img src={icon} className="h-10 w-10 shrink-0" alt="icon-image" />
+            </div>
 
-          <p className="text-gray-300 text-2xl font-medium">{title}</p>
+            <p className="text-gray-300 text-2xl font-medium">{title}</p>
+          </div>
         </div>
-        <p className="text-gray-400">{subtitle}</p>
+        <p className="text-gray-400 text-lg">{subtitle}</p>
       </div>
     );
   };
@@ -45,16 +47,17 @@ const ServicesSection = forwardRef((props, ref) => {
             range of services to discover how we can help you.
           </p>
         </div>
-        <div className="flex flex-col space-y-4 w-full lg:px-20 md:px-10 sm:px-8 px-4">
+        <div className="flex flex-col space-y-4 w-full lg:px-20 md:px-10 sm:px-8 px-4 border-none">
           {offeredServices.map((service) => {
-            const { title, description, subtitle, icon, image } = service || {};
+            const { title, description, subTitle, icon, image } = service || {};
             return (
               <Card
-                renderTitle={renderTitle(title, subtitle, icon)}
+                renderTitle={renderTitle(title, subTitle, icon)}
                 description={description}
                 renderButton={renderButton}
                 key={title}
                 image={image}
+                subTitle={subTitle}
               />
             );
           })}

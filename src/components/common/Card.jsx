@@ -4,8 +4,9 @@ const Card = ({ renderTitle, description, renderButton, image }) => {
   return (
     <div className="h-full w-full border rounded-lg border-gray-500 p-6 mx-auto max-w-full shadow-gray-400 shadow-sm">
       <div className="flex flex-1 flex-wrap w-full h-full space-y-4 md:flex-row flex-col md:space-x-4 lg:space-x-8">
-        <div className="flex flex-col text-start w-full h-full sm:space-y-8 space-y-4 sm:flex-1">
+        <div className="flex flex-col text-start w-full h-full sm:space-y-6 space-y-4 sm:flex-1">
           <div>{renderTitle}</div>
+
           <p className="text-gray-400 w-full md:w-full">{description}</p>
           {renderButton()}
         </div>
