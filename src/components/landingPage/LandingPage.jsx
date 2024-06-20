@@ -19,6 +19,7 @@ const LandingPage = () => {
   const titleSectionRef = useRef(null);
   const ownerSectionRef = useRef(null);
   const servicesSectionRef = useRef(null);
+  const contactUsSectionRef = useRef(null);
 
   const onClick = (name) => {
     if (name === "Home") {
@@ -57,6 +58,18 @@ const LandingPage = () => {
         });
       }
     }
+    if (name === "Contact Us") {
+      if (
+        contactUsSectionRef &&
+        contactUsSectionRef !== null &&
+        contactUsSectionRef.current
+      ) {
+        contactUsSectionRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
   };
 
   return (
@@ -67,7 +80,7 @@ const LandingPage = () => {
         <TitlePageSection ref={titleSectionRef} />
         <OwnerSection ref={ownerSectionRef} />
         <ServicesSection ref={servicesSectionRef} />
-        <ContactUsSection />
+        <ContactUsSection ref={contactUsSectionRef} />
         <Footer />
       </div>
     </div>

@@ -10,6 +10,7 @@ const navigation = [
   { name: "Home", href: "#", current: true },
   { name: "About", href: "#", current: false },
   { name: "Services", href: "#", current: false },
+  { name: "Contact Us", href: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -82,7 +83,7 @@ const Navbar = ({ onClick }) => {
                   aria-current={item.current ? "page" : undefined}
                   onClick={() => onClick(item.name)}
                 >
-                  test
+                  {item.name}
                 </DisclosureButton>
               ))}
             </div>

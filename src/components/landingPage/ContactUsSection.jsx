@@ -1,8 +1,9 @@
 import { useFormik } from "formik";
 import { FIELDS } from "./constants";
 import { Button } from "@headlessui/react";
+import { forwardRef } from "react";
 
-const ContactUsSection = () => {
+const ContactUsSection = forwardRef((props, ref) => {
   const handleSubmit = () => {
     console.log("submit");
   };
@@ -56,7 +57,10 @@ const ContactUsSection = () => {
   };
 
   return (
-    <div className="bg-gray-950 z-10 h-full w-full md:px-20 sm:px-16 px-4">
+    <div
+      className="bg-gray-950 z-10 h-full w-full md:px-20 sm:px-16 px-4 pt-16"
+      ref={ref}
+    >
       <div className="my-4">
         <div className="pb-4 text-center">
           <p className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 font-bold">
@@ -88,6 +92,8 @@ const ContactUsSection = () => {
       </div>
     </div>
   );
-};
+});
+
+ContactUsSection.displayName = "ContactUsSection";
 
 export default ContactUsSection;
