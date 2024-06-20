@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 const Navbar = ({ onClick }) => {
   return (
-    <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-30">
+    <Disclosure as="nav" className="bg-gray-800 fixed top-0 z-30 w-full">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -27,7 +27,7 @@ const Navbar = ({ onClick }) => {
                 {/* Mobile menu button*/}
                 <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
+
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
@@ -66,8 +66,8 @@ const Navbar = ({ onClick }) => {
             </div>
           </div>
 
-          <DisclosurePanel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+          <DisclosurePanel className="sm:hidden sticky top-20 z-30">
+            <div className="space-y-1 px-2 pb-3 pt-2 bg-">
               {navigation.map((item) => (
                 <DisclosureButton
                   key={item.name}
@@ -82,7 +82,7 @@ const Navbar = ({ onClick }) => {
                   aria-current={item.current ? "page" : undefined}
                   onClick={() => onClick(item.name)}
                 >
-                  {item.name}
+                  test
                 </DisclosureButton>
               ))}
             </div>

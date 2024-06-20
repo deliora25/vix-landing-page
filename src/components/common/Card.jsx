@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Card = ({ renderTitle, description, renderButton, image }) => {
   return (
-    <div className="h-full w-full border rounded-lg border-gray-500 p-6 mx-auto max-w-full shadow-gray-400 shadow-sm">
+    <div className="h-full w-full border rounded-lg border-gray-500 p-6 mx-auto max-w-full shadow-gray-400 shadow-sm z-10 bg-gray-950 bg-gradient-to-l from-gray-900 via-gray-950 to-gray-950">
       <div className="flex flex-1 flex-wrap w-full h-full space-y-4 md:flex-row flex-col md:space-x-4 lg:space-x-8">
         <div className="flex flex-col text-start w-full h-full sm:space-y-6 space-y-4 sm:flex-1">
           <div>{renderTitle}</div>
@@ -14,7 +14,7 @@ const Card = ({ renderTitle, description, renderButton, image }) => {
           <img
             src={image}
             alt="alt-image"
-            className="rounded-lg text-gray-300 w-full h-auto object-cover"
+            className="rounded-lg text-gray-300 w-full h-auto object-cover z-50"
           />
         </div>
       </div>

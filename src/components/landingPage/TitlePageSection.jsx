@@ -6,7 +6,7 @@ const TitlePageSection = forwardRef((props, ref) => {
   return (
     <div className="flex h-full w-full border-none" ref={ref}>
       <div className="bg-gradient-to-b from-[#143365] to-gray-950 w-full">
-        <div className="flex flex-col items-center justify-center sm:mt-20 mt-6 w-full">
+        <div className="flex flex-col items-center justify-center sm:mt-40 mt-28 w-full">
           <div className="flex flex-col space-y-8 items-center">
             <img
               src="https://static.wixstatic.com/media/9965da_43a977ea80a347908904f481e0e93af6~mv2.png/v1/fill/w_600,h_224,al_c,lg_1,q_85,enc_auto/9965da_43a977ea80a347908904f481e0e93af6~mv2.png"
@@ -16,7 +16,7 @@ const TitlePageSection = forwardRef((props, ref) => {
                 display: "block",
               }}
             />
-            <div className="flex flex-col items-center space-y-6 justify-center sm:text-6xl text-4xl font-bold sm:px-6 px-4 text-center">
+            <div className="flex flex-col items-center z-10 space-y-6 justify-center sm:text-6xl text-4xl font-bold sm:px-6 px-4 text-center">
               <span>Empowering Organizations</span>{" "}
               <span className="text-blue-500">
                 Through Business Intelligence
@@ -27,7 +27,7 @@ const TitlePageSection = forwardRef((props, ref) => {
             </Button>
           </div>
 
-          <div className="w-full h-fit border-none">
+          <div className="w-full h-fit border-none z-10">
             <img
               src={wave_image}
               alt="wave-image"

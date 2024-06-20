@@ -6,7 +6,7 @@ const { storyMessage, header, title, name } = ownerSectionDetails || {};
 const OwnerSection = forwardRef((props, ref) => {
   return (
     <div
-      className="flex flex-col items-center justify-center sm:space-y-16 space-y-4 lg:px-10 px-2 h-full w-full bg-gray-950 border-none"
+      className="flex flex-col items-center justify-center sm:space-y-16 space-y-4 lg:px-10 px-2 pt-10 pb-20 h-full w-full bg-gray-950 border-none z-10"
       ref={ref}
     >
       <div className="pt-16 flex flex-col items-center justify-center space-y-4">
@@ -34,7 +34,7 @@ const OwnerSection = forwardRef((props, ref) => {
           <div className="flex flex-col items-center justify-center h-full space-y-4 ">
             <img
               src="https://static.wixstatic.com/media/9965da_65a0d84b50854839a79472bb41f1404f~mv2.png/v1/fill/w_280,h_280,al_c,lg_1,q_85,enc_auto/9965da_65a0d84b50854839a79472bb41f1404f~mv2.png"
-              className="max-h-full rounded-lg"
+              className="max-h-full rounded-lg z-50"
             />
             <div className="flex flex-col items-center text-xl text-gray-400">
               <p>{name}</p>

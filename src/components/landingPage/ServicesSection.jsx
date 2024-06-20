@@ -6,7 +6,7 @@ import { forwardRef } from "react";
 const ServicesSection = forwardRef((props, ref) => {
   const renderTitle = (title, subtitle, icon) => {
     return (
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-4 z-10">
         <div className="flex space-x-2 items-start justify-start">
           <div className="flex space-x-4 items-center justify-center">
             <div className="rounded-lg p-4 bg-[#1A181B] shrink-0">
@@ -36,7 +36,7 @@ const ServicesSection = forwardRef((props, ref) => {
       ref={ref}
     >
       <div className="h-full w-full flex flex-col items-center justify-center text-center my-16 space-y-6 mb-4 max-w-full">
-        <div className="w-full h-full flex flex-1 flex-col items-center space-y-4 md:px-10 sm:px-8 px-4 text-center">
+        <div className="w-full h-full flex flex-1 flex-col items-center space-y-4 md:px-10 sm:px-8 px-4 text-center z-10">
           <p className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 font-bold">
             Services
           </p>

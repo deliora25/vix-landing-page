@@ -3,14 +3,16 @@ import OwnerSection from "./OwnerSection";
 import ServicesSection from "./ServicesSection";
 import Navbar from "./Navbar";
 import { useRef } from "react";
+import ContactUsSection from "./ContactUsSection";
+import Footer from "../footer/Footer";
 
 const dottedGridStyle = {
-  backgroundImage: "radial-gradient(circle, gray 1px, transparent 1px)",
+  backgroundImage: "radial-gradient(circle, black 1px, transparent 1px)",
   backgroundSize: "20px 20px",
-  position: "absolute",
+  position: "fixed",
   inset: 0,
-  opacity: 0.2,
-  height: "90%",
+  opacity: 0.5,
+  height: "100%",
 };
 
 const LandingPage = () => {
@@ -59,12 +61,14 @@ const LandingPage = () => {
 
   return (
     <div className="h-full w-full">
-      <div className="h-full w-full z-10" style={dottedGridStyle} />
+      <div className="h-full w-full -z-0" style={dottedGridStyle} />
       <Navbar onClick={onClick} />
       <div className="text-white flex flex-col">
         <TitlePageSection ref={titleSectionRef} />
         <OwnerSection ref={ownerSectionRef} />
         <ServicesSection ref={servicesSectionRef} />
+        <ContactUsSection />
+        <Footer />
       </div>
     </div>
   );

@@ -53,3 +53,10 @@ export const ownerSectionDetails = {
     "That's why I started this company: I've discovered a better way to bring affordable business insights to small businesses and government agencies.",
   ],
 };
+
+export const FIELDS = [
+  { name: "firstName", label: "First Name", type: "text", isFullWidth: false },
+  { name: "lastName", label: "Last Name", type: "text", isFullWidth: false },
+  { name: "subject", label: "Subject", type: "text", isFullWidth: true },
+  { name: "message", label: "Your Message", type: "text", isFullWidth: true },
+];
