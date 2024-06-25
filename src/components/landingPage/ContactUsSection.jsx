@@ -58,7 +58,7 @@ const ContactUsSection = forwardRef((props, ref) => {
 
   return (
     <div
-      className="bg-gray-950 z-10 h-full w-full md:px-20 sm:px-16 px-4 pt-16"
+      className="bg-gray-950 z-10 h-full w-full lg:px-20 md:px-10 sm:px-16 px-4 pt-16"
       ref={ref}
     >
       <div className="my-4">
@@ -70,7 +70,7 @@ const ContactUsSection = forwardRef((props, ref) => {
       </div>
 
       <div className="border border-gray-500 rounded-lg my-4 shadow-sm shadow-gray-400">
-        <div className="flex flex-1 h-full w-full  items-center justify-center max-w-2xl mx-auto">
+        <div className="flex flex-1 h-full w-full items-center justify-center max-w-2xl mx-auto">
           <form className="w-full h-full text-gray-950 p-4">
             <div className="w-full h-full grid grid-cols-2 gap-x-4 gap-y-4">
               {FIELDS.map((x) =>
